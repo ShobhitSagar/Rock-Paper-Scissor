@@ -1,0 +1,129 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-color: #1A5EA1;}
+
+nav {
+    position: absolute;
+    float: left;
+    width: 100vw;
+    height: 25px;
+    padding: 20px 0px;
+    background-color: #183153;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);}
+
+#site_name {
+    padding-left: 20px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+#score_sec {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #183153;
+    padding: 10px;
+    border-radius: .2rem .2rem 0rem 0rem;
+}
+
+strong {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#show-screen {
+    width: 300px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-radius: 0rem 0rem .2rem .2rem;
+    background: #fff;
+    padding: 10px;
+}
+
+.human-fist {
+    transform: rotateY(180deg) rotate(-90deg);
+}
+
+#user-show-hand {
+    font-size: 100px;
+    padding: 50px 0px;
+    color: bisque;
+}
+
+#divider {
+    width: 2px;
+    background-color: #1A5EA1;
+}
+
+#bot-show-hand {
+    font-size: 100px;
+    padding: 50px 0px;
+    color: darkgrey;
+}
+
+.bot-fist {
+    transform: rotate(-90deg);
+}
+
+#user-show-hand, #bot-show-hand {
+    width: 100px;
+}
+
+.user-hand {
+    padding: 20px;
+    background: #183153;
+    border-radius: 5rem;
+    display: inline-block;
+    transition: background .2s;}
+
+.user-hand:hover {
+    background: rgb(18, 36, 61);
+}
+
+.rock:hover {cursor: grabbing;}
+.paper:hover {cursor: grab;}
+.scissor:hover {cursor: pointer;}
+
+#rock, #paper, #scissor {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: aliceblue;}
+
+.fa-hand-scissors {
+    transform: rotate(75deg);}
+#rock {
+    transform: rotate(0deg);}
+
+#toast-message {
+    position: fixed;
+    bottom: -5rem;
+    opacity: .8;
+
+    user-select: none;
+    color: #fff;
+    background: rgba(24, 190, 60, 0.8);
+
+    padding: 1rem 2rem;
+    border-radius: .2rem;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, .4);
+
+    transition: bottom .4s ease;
+}
+
+#toast-message.show {
+    bottom: 1rem;
+}
